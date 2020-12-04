@@ -1,0 +1,42 @@
+{
+    "name": "socoladaica/laravel-table-prefix",
+    "description": "Allows you to use a table prefix with standard Laravel models.",
+    "keywords": [
+        "socoladaica",
+        "laravel-table-prefix"
+    ],
+    "homepage": "https://github.com/socoladaica/laravel-table-prefix",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Socola Dai ca",
+            "email": "SocolaDaiCa@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SocolaDaiCa\\LaravelTablePrefix\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SocolaDaiCa\\LaravelTablePrefix\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
