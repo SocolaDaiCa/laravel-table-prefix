@@ -7,6 +7,7 @@
 
 Allows you to use a table prefix with standard Laravel models.
 
+Have inspiration from ideas [\[Proposal\] Prefixed Eloquent Models](https://github.com/laravel/ideas/issues/151)
 ## Installation
 
 You can install the package via composer:
