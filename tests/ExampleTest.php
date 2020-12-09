@@ -1,17 +1,11 @@
 <?php
 
-namespace SocolaDaiCa\LaravelTablePrefix\Tests;
+namespace Socoladaica\LaravelTablePrefix\Tests;
 
-use Orchestra\Testbench\TestCase;
+use PHPUnit\Framework\TestCase;
 
 class ExampleTest extends TestCase
 {
-
-    // protected function getPackageProviders($app)
-    // {
-    //     return [LaravelTablePrefixServiceProvider::class];
-    // }
-    
     /** @test */
     public function true_is_true()
     {

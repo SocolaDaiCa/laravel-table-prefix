@@ -1,9 +1,10 @@
-# Very short description of the package
+# Laravel Table Prefix
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/socoladaica/laravel-table-prefix.svg?style=flat-square)](https://packagist.org/packages/socoladaica/laravel-table-prefix)
-[![Build Status](https://img.shields.io/travis/socoladaica/laravel-table-prefix/master.svg?style=flat-square)](https://travis-ci.org/socoladaica/laravel-table-prefix)
-[![Quality Score](https://img.shields.io/scrutinizer/g/socoladaica/laravel-table-prefix.svg?style=flat-square)](https://scrutinizer-ci.com/g/socoladaica/laravel-table-prefix)
-[![Total Downloads](https://img.shields.io/packagist/dt/socoladaica/laravel-table-prefix.svg?style=flat-square)](https://packagist.org/packages/socoladaica/laravel-table-prefix)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/Socoladaica/laravel-table-prefix.svg?style=flat-square)](https://packagist.org/packages/Socoladaica/laravel-table-prefix)
+[![Build Status](https://img.shields.io/travis/Socoladaica/laravel-table-prefix/master.svg?style=flat-square)](https://travis-ci.org/Socoladaica/laravel-table-prefix)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/Socoladaica/laravel-table-prefix/run-tests?label=tests)](https://github.com/Socoladaica/laravel-table-prefix/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Quality Score](https://img.shields.io/scrutinizer/g/Socoladaica/laravel-table-prefix.svg?style=flat-square)](https://scrutinizer-ci.com/g/Socoladaica/laravel-table-prefix)
+[![Total Downloads](https://img.shields.io/packagist/dt/Socoladaica/laravel-table-prefix.svg?style=flat-square)](https://packagist.org/packages/Socoladaica/laravel-table-prefix)
 
 Allows you to use a table prefix with standard Laravel models.
 
@@ -26,7 +27,7 @@ Using it inside a `Post` model would look like this:
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use SocolaDaiCa\LaravelTablePrefix\HasTablePrefix;
+use Socoladaica\LaravelTablePrefix\HasTablePrefix;
 
 class Post extends Model
 {
@@ -45,7 +46,7 @@ Using it inside a `CategoryPost` pilot would look like this:
 namespace App;
 
 use Illuminate\Database\Eloquent\Relations\Pivot;
-use SocolaDaiCa\LaravelTablePrefix\HasTablePrefix;
+use Socoladaica\LaravelTablePrefix\HasTablePrefix;
 
 class CategoryPost extends Pivot
 {
@@ -63,7 +64,7 @@ However, if someone were to use this approach and had many models with a prefix 
 
 namespace App;
 
-use SocolaDaiCa\LaravelTablePrefix\HasTablePrefix;
+use Socoladaica\LaravelTablePrefix\HasTablePrefix;
 
 trait BlogPrefix
 {
@@ -103,7 +104,7 @@ The final pivot might look something like this:
 namespace App;
 
 use Illuminate\Database\Eloquent\Relations\Pivot;
-use SocolaDaiCa\LaravelTablePrefix\HasTablePrefix;
+use Socoladaica\LaravelTablePrefix\HasTablePrefix;
 
 class CategoryPost extends Pivot
 {
@@ -166,17 +167,13 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email SocolaDaiCa@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email Socoladaica@gmail.com instead of using the issue tracker.
 
 ## Credits
 
-- [Socola Dai ca](https://github.com/socoladaica)
+- [Socola Dai ca](https://github.com/Socoladaica)
 - [All Contributors](../../contributors)
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## Laravel Package Boilerplate
-
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).

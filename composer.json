@@ -1,42 +1,58 @@
 {
     "name": "socoladaica/laravel-table-prefix",
-    "description": "Allows you to use a table prefix with standard Laravel models.",
+    "description": "Allows you to use a table prefix with standard Laravel models",
     "keywords": [
         "socoladaica",
         "laravel-table-prefix"
     ],
     "homepage": "https://github.com/socoladaica/laravel-table-prefix",
     "license": "MIT",
-    "type": "library",
     "authors": [
         {
-            "name": "Socola Dai ca",
+            "name": "Socola Đại Ca",
             "email": "SocolaDaiCa@gmail.com",
+            "homepage": "https://spatie.be",
             "role": "Developer"
         }
     ],
     "require": {
+        "php": "^7.4|^8.0",
+        "laravel/framework": "^5.0|^6.0|^7.0|^8.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^4.0",
-        "phpunit/phpunit": "^8.0"
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "phpunit/phpunit": "^9.3",
+        "vimeo/psalm": "^3.11"
     },
     "autoload": {
         "psr-4": {
-            "SocolaDaiCa\\LaravelTablePrefix\\": "src"
+            "Socoladaica\\LaravelTablePrefix\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SocolaDaiCa\\LaravelTablePrefix\\Tests\\": "tests"
+            "Socoladaica\\LaravelTablePrefix\\Tests\\": "tests"
         }
     },
     "scripts": {
+        "psalm": "vendor/bin/psalm",
         "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
     },
     "config": {
         "sort-packages": true
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/spatie"
+        },
+        {
+            "type": "other",
+            "url": "https://spatie.be/open-source/support-us"
+        }
+    ]
 }

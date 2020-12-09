@@ -1,1 +1,1 @@
-C:37:"PHPUnit\Runner\DefaultTestResultCache":196:{a:2:{s:7:"defects";a:1:{s:62:"SocolaDaiCa\LaravelTablePrefix\Tests\ExampleTest::true_is_true";i:4;}s:5:"times";a:1:{s:62:"SocolaDaiCa\LaravelTablePrefix\Tests\ExampleTest::true_is_true";d:0.108;}}}
+C:37:"PHPUnit\Runner\DefaultTestResultCache":272:{a:2:{s:7:"defects";a:1:{s:61:"Socoladaica\LaravelTablePrefix\Tests\SimpleTest::true_is_true";i:3;}s:5:"times";a:2:{s:62:"Socoladaica\LaravelTablePrefix\Tests\ExampleTest::true_is_true";d:0.003;s:61:"Socoladaica\LaravelTablePrefix\Tests\SimpleTest::true_is_true";d:0.012;}}}

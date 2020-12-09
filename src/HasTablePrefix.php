@@ -1,11 +1,12 @@
 <?php
 
 
-namespace SocolaDaiCa\LaravelTablePrefix;
+namespace Socoladaica\LaravelTablePrefix;
 
 trait HasTablePrefix
 {
     protected string $tableWithPrefix;
+
     /**
      * Get the prefix associated with the model.
      *
