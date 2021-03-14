@@ -126,12 +126,12 @@ class CreateSocolaCmsBlogDatabase extends Migration
     public function up()
     {
 
-        Schema::create((new Post())->getTable(), function (Blueprint $table) {
+        Schema::create(Post::getTableName(), function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
 
-        Schema::create((new Category())->getTable(), function (Blueprint $table) {
+        Schema::create(Category::getTableName(), function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
@@ -144,8 +144,8 @@ class CreateSocolaCmsBlogDatabase extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists((new Post())->getTable());
-        Schema::dropIfExists((new Category())->getTable());
+        Schema::dropIfExists(Post::getTableName());
+        Schema::dropIfExists(Category::getTableName());
     }
 }
 
