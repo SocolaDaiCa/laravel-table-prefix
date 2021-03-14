@@ -53,4 +53,9 @@ trait HasTablePrefix
 
         return $this;
     }
+
+    public static function getTableName()
+    {
+        return with(new static())->getTable();
+    }
 }
