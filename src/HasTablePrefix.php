@@ -33,8 +33,11 @@ trait HasTablePrefix
 
         if ($this instanceof Pivot && ! isset($this->table)) {
             $this->setTable($this->getPrefix() . str_replace(
-                '\\', '', Str::snake(Str::singular(class_basename($this)))
+                '\\',
+                '',
+                Str::snake(Str::singular(class_basename($this)))
             ));
+
             return $this->tableWithPrefix;
         }
 
