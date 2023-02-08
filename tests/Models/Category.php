@@ -8,5 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     use Prefix;
+
     protected $table = 'categories';
 }
