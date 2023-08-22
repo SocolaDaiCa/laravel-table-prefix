@@ -20,7 +20,7 @@ class SimpleTest extends TestCase
         $item = new Post();
         $this->assertEquals('socola_cms_blog__posts', $item->getTable());
 
-//        $item = new CategoryPost();
-//        $this->assertEquals('socola_cms_blog__category_post', $item->getTable());
+        //        $item = new CategoryPost();
+        //        $this->assertEquals('socola_cms_blog__category_post', $item->getTable());
     }
 }
