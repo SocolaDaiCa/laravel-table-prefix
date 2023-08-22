@@ -1,0 +1,14 @@
+# https://github.com/marketplace/actions/automatic-releases
+
+name: "Release"
+
+on:
+  push:
+    branches:
+      - "1.x"
+
+jobs:
+  release:
+    uses: SocolarDaiCa/.github/.github/workflows/release.yml@1.x
+    with:
+      version: "1.0"
