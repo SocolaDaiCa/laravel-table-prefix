@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Socoladaica\LaravelTablePrefix\Tests\Models;
 
 use Socoladaica\LaravelTablePrefix\HasTablePrefix;
