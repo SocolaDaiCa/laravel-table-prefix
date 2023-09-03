@@ -30,7 +30,7 @@ trait HasTablePrefix
             return $this->tableWithPrefix;
         }
 
-        if ($this instanceof Pivot && !isset($this->table)) {
+        if ($this instanceof Pivot && ! isset($this->table)) {
             $this->setTable($this->getPrefix().str_replace(
                 '\\',
                 '',
