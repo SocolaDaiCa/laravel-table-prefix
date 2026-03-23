@@ -2,7 +2,6 @@
 
 namespace Socoladaica\LaravelTablePrefix;
 
-use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Support\Str;
 
 trait HasTablePrefix
@@ -30,17 +29,9 @@ trait HasTablePrefix
             return $this->tableWithPrefix;
         }
 
-        if ($this instanceof Pivot && ! isset($this->table)) {
-            $this->setTable($this->getPrefix().str_replace(
-                '\\',
-                '',
-                Str::snake(Str::singular(class_basename($this)))
-            ));
+        $this->setTable(parent::getTable());
 
-            return $this->tableWithPrefix;
-        }
-
-        return $this->getPrefix().Str::snake(Str::pluralStudly(class_basename($this)));
+        return $this->tableWithPrefix;
     }
 
     /**
@@ -52,7 +43,10 @@ trait HasTablePrefix
      */
     public function setTable($table)
     {
-        $this->tableWithPrefix = $table;
+        
+        $this->tableWithPrefix = Str::start($this->getPrefix().$table, $this->getPrefix());
+
+        parent::setTable(Str::after($this->tableWithPrefix, $this->getPrefix()));
 
         return $this;
     }

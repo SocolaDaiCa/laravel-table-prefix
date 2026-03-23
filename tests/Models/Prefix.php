@@ -8,5 +8,5 @@ trait Prefix
 {
     use HasTablePrefix;
 
-    public string $prefix = 'socola_cms_blog__';
+    protected string $prefix = 'socola_cms_blog__';
 }
